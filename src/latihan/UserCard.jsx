@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function UserCard(props) {
-  const { name, email, street, city, ...rest } = props;
+  const {name, email, street, city, ...rest} = props;
   const [clicked, setClicked] = useState(false);
 
   return (
@@ -33,5 +33,6 @@ function UserCard(props) {
     </div>
   );
 }
+
 
 export default UserCard;
